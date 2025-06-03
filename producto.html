@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Flor Eclipse | Plantas y Jardinería</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header-small">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="flor_de_eclipse_logo_circular.jpg" alt="Flor Eclipse Logo" width="80" class="logo-img">
+                    <span class="logo-text">Flor Eclipse</span>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="producto.html" class="active">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="#" id="cart-icon" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        
+        <section class="products-hero">
+            <div class="container">
+                <h1>Nuestros Productos</h1>
+                <p>Descubre la mejor selección de plantas, herramientas y accesorios para tu jardín</p>
+            </div>
+        </section>
+
+    
+        <section class="product-filters container">
+            <div class="filter-group">
+                <label for="category-filter">Categoría:</label>
+                <select id="category-filter">
+                    <option value="all">Todas las categorías</option>
+                    <option value="herramientas">Herramientas</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">Precio:</label>
+                <select id="price-filter">
+                    <option value="all">Todos los precios</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-200">$100 - $200</option>
+                    <option value="200+">$200+</option>
+                </select>
+            </div>
+            <div class="filter-group search-group">
+                <input type="text" id="product-search" placeholder="Buscar productos...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        
+        <section class="products container">
+            <div class="products-grid" id="products-container">
+                
+            </div>
+        </section>
+
+        
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-shopping-cart"></i> Carrito de Compras</h3>
+                    <button id="close-cart" class="close-modal">&times;</button>
+                </div>
+                <div id="cart-items" class="cart-items-container">
+            
+                    <div class="empty-cart-message">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Tu carrito está vacío</p>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <p>Subtotal: <span>$<span id="cart-subtotal">0</span></span></p>
+                        <p>Envío: <span>$<span id="cart-shipping">5.99</span></span></p>
+                        <p class="total">Total: <span>$<span id="cart-total">5.99</span></span></p>
+                    </div>
+                    <div class="cart-buttons">
+                        <button class="btn btn-secondary" id="continue-shopping">Seguir Comprando</button>
+                        <button class="btn" id="checkout-btn">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="flor_de_eclipse_logo_circular.jpg" alt="Flor Eclipse Logo" width="80" class="footer-logo">
+                    <p>Transformando espacios con naturaleza desde 2023. Especialistas en plantas y jardinería.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicio.html">Servicios</a></li>
+                        <li><a href="producto.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Jardines 123, Ciudad</p>
+                    <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@floreclipse.com</p>
+                    <p><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recibe consejos de jardinería y ofertas especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Flor Eclipse. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

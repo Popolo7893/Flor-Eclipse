@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Flor Eclipse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header-small">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="flor_de_eclipse_logo_circular.jpg" alt="Flor Eclipse Logo" width="100"    class="logo-img">
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="info-item">
+                            <h4>Dirección</h4>
+                            <p>Calle Principal 123, Ciudad</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Teléfono</h4>
+                            <p>(123) 456-7890</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>info@floreclipse.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Horario</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                            <p>Sábados: 9:00 - 14:00</p>
+                        </div>
+                        <div class="social-media">
+                            <h4>Síguenos en Redes Sociales</h4>
+                            <div class="social-icons">
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h3>Nuestra Ubicación</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8101320374256!2d-74.07709278573423!3d4.598235543799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9862b8faa!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2s!4v1644893744706!5m2!1sen!2s"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Flor Eclipse</h3>
+                    <p>Transformando espacios verdes desde 2025</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contáctanos</h4>
+                    <p>Email: info@floreclipse.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Flor Eclipse. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
